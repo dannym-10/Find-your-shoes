@@ -1,0 +1,103 @@
+{
+    "store": [
+        {
+            "id": "001",
+            "make": "Nike",
+            "model": "Jordan 1",
+            "sizes": [5,6,7,8,9,10,11,12,13,14],
+            "colours": ["red", "green", "white"],
+            "rating": "9",
+            "releaseYear": 2015,
+            "retailPrice": 145,
+            "image": "location"
+        },
+        {
+            "id": "002",
+            "make": "Nike",
+            "model": "Jordan 2",
+            "sizes": [7,8,9,10,11,12,13,14,15],
+            "colours": ["purple", "pink", "white"],
+            "rating": "6",
+            "releaseYear": 2016,
+            "retailPrice": 130,
+            "image": "Images"
+        },
+        {
+            "id": "003",
+            "make": "Nike",
+            "model": "Jordan 3",
+            "sizes": [5,6,7,8,9,10,11,12,13,14],
+            "colours": ["red", "black", "green"],
+            "rating": "9",
+            "releaseYear": 2019,
+            "retailPrice": 100,
+            "image": "location"
+        },
+        {
+            "id": "004",
+            "make": "Nike",
+            "model": "Jordan 4",
+            "sizes": [5,6,7,8,9,10,11,12,13,14],
+            "colours": ["red", "black", "white", "gold"],
+            "rating": "10",
+            "releaseYear": 2013,
+            "retailPrice": 165,
+            "image": "location"
+        },
+        {
+            "id": "005",
+            "make": "Nike",
+            "model": "Jordan 5",
+            "sizes": [5,6,7,8,9,10,11,12,13,14],
+            "colours": ["red", "silver", "white"],
+            "rating": "6",
+            "releaseYear": 2009,
+            "retailPrice": 105,
+            "image": "location"
+        },
+        {
+            "id": "006",
+            "make": "Nike",
+            "model": "Jordan 8",
+            "sizes": [5,6,7,8,9,10,12,13,14],
+            "colours": ["red", "blue", "white"],
+            "rating": "6",
+            "releaseYear": 2009,
+            "retailPrice": 99,
+            "image": "location"
+        },
+        {
+            "id": "007",
+            "make": "Nike",
+            "model": "Jordan 6",
+            "sizes": [5,6,7,8,9,10,11],
+            "colours": ["red", "white"],
+            "rating": "6",
+            "releaseYear": 2009,
+            "retailPrice": 170,
+            "image": "location"
+        },
+        {
+            "id": "008",
+            "make": "Adidas",
+            "model": "Yeezy 350 Bred",
+            "sizes": [3,4,5,6,7,8,9,10,11,12,13,14],
+            "colours": ["black", "red"],
+            "rating": "9",
+            "releaseYear": 2011,
+            "retailPrice": 170,
+            "image": "location"
+        },
+        {
+            "id": "009",
+            "make": "Adidas",
+            "model": "Yeezy Turtle Dove",
+            "sizes": [3,4,5,6,7,8,9,10,11,12,13,14],
+            "colours": ["black", "red", "orange"],
+            "rating": "9",
+            "releaseYear": 2016,
+            "retailPrice": 170,
+            "image": "location"
+        }
+    ]
+}

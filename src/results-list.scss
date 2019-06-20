@@ -1,0 +1,65 @@
+.results-wrapper {
+    padding: 15px 0;
+}
+
+.results-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1000px;
+	margin: 0 auto;
+}
+
+.shoe-item {
+	width: 200px;
+	height: 275px;
+	padding: 10px;
+    box-sizing: border-box;
+
+    &:hover {
+        box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.52);
+        cursor: pointer;
+    }
+}
+
+.image-wrapper {
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.info {
+    .make {
+
+    }
+
+    .model {
+
+    }
+
+    .sizes {
+        display: flex;
+    }
+
+    .colours {
+
+    }
+
+    .rating {
+
+    }
+
+    .release-year {
+
+    }
+}
+
+.no-results {
+    font-size: 22px;
+	padding: 10px;
+	text-align: center;
+    color: red;
+}

@@ -1,0 +1,9 @@
+@import 'additional/variables.scss';
+
+.wrapper {
+    max-width: $globalwidth;
+    margin: 0 auto;
+    background: $color-background-desktop;
+    padding: 10px 15px;
+	box-sizing: border-box;
+}

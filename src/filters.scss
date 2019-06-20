@@ -1,0 +1,61 @@
+.search-wrapper {
+
+}
+
+.search-container {
+}
+
+.search-bar-wrapper {
+    transition: 0.7s;
+    text-align: center;
+}
+
+.search-bar {
+    width: 200px;
+    height: 35px;
+    transition: 0.7s;
+    padding: 0 10px;
+}
+
+.focused {
+    width: 270px;
+}
+
+.colour-search {
+    display: flex;
+    width: 50%;
+	justify-content: space-between;
+    margin: 0 auto;
+
+    .colour-checkbox {
+        width: 35px;
+        height: 35px;
+        position: relative;
+        cursor: pointer;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
+
+        .checkbox {
+            position: absolute;
+            top:0;
+            left: 0;
+            height: 35px;
+            width: 35px;
+        }
+
+        &:hover input ~ .checkbox {
+            opacity: 0.7;
+            border: 0.5px solid black;
+        }
+
+        input:checked ~ .checkbox {
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+    }
+}

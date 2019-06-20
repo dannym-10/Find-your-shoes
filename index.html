@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Find your shoe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.min.css" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="search-wrapper">
+            <form class="search-container">
+                <div class="search-bar-wrapper">
+                    <input type="text" class="search-bar" placeholder="Search"/>
+                </div>
+                <ul class="colour-search"></ul>
+                <button class="reset-filters"></button>
+            </form>
+        </div>
+        <div class="results-wrapper">
+            <ul class="results-list">
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+        </div>
+    </div>
+</body>
+</html>
+<!-- serve . -p 1235 - to run local server-->
+<!-- npm run babel - to run project -->
+
+<!-- <select name="shoeSizes" class="size-search"></select> -->
+<!-- <select name="shoeHeight" class="height-search"></select> -->
+<!-- <select name="shoeRating" class="rating-search"></select> -->
+<!-- <select name="shoeRelease" class="release-search"></select> -->

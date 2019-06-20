@@ -1,0 +1,42 @@
+.modal {
+    display: none;
+    width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+    background: rgba(0,0,0,0.25);
+    transform: scale(1.1);
+
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        width: 500px;
+        height: 250px;
+        border-radius: 10px;
+        padding: 25px;
+        box-sizing: border-box;
+
+        .close-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 8px 14px;
+            font-size: 36px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                transform: rotate(90deg);
+                color: red;
+            }
+        }
+    }
+}
+
+.show-modal {
+    display: block;
+}
