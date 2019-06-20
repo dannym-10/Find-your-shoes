@@ -23,6 +23,7 @@ const sizeMarkup = (sizes) => {
 
 const colorsMarkup = (colours) => {
     let markup = ``;
+
     colours.map(color => markup += `<li class="color-item color-${color}">${color}</li>`);
     return markup;
 }
@@ -153,6 +154,8 @@ searchInput.addEventListener('blur', expandSearchBox);
 searchInput.addEventListener('focus', expandSearchBox);
 
 resetFiltersButton.addEventListener('click', resetFilters, false);
+
+alert('hekki');
 
 const load = () => {
     colourSearch.querySelectorAll('.colour-checkbox input').forEach(colourFilter => colourFilter.addEventListener('click', filterColours), false);

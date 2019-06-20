@@ -1,14 +1,14 @@
 # Find Your Shoes
 
-## Install Node Modules to the project folder
+### Install Node Modules to the project folder
 ```
-npm install 
+npm install
 ```
-## Run the project using babel in one terminal
+### Run the project using babel in one terminal
 ```
 npm run build-all
 ```
-## Serve the files to port 3000 in another terminal
+### Serve the files to port 3000 in another terminal
 ```
 serve . -p 3000
 ```
