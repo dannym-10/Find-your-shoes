@@ -121,21 +121,21 @@ const expandSearchBox = () => {
     searchInput.classList.toggle('focused');
 }
 
-//Modal stuff
+// -------- Modal --------
 const showHideModal = () => {
-    console.log('clocked');
     document.querySelector('.modal').classList.toggle('show-modal');
 }
 
-function toggleModal() {
+function toggleItemModal() {
     showHideModal();
     const theModal = document.querySelector('.modal-content');
     const shoeId = this.getAttribute('data-shoe-id');
     const theShoe = tempData.store.find(shoe => {
         return shoe.id === shoeId;
     });
-    theModal.innerHTML += `
+    theModal.innerHTML = `
         <h2>${theShoe.make} - ${theShoe.model}</h2>
+        <span class="close-button">&times;</span>
     `;
 }
 
@@ -143,10 +143,9 @@ function windowOnClick(e) {
     if (e.target === document.querySelector('.modal')) {
         showHideModal();
     }
-}
-
-function stuff() {
-    console.log('likshff');
+    if (e.target.matches('.close-button')) {
+        showHideModal();
+    }
 }
 
 searchInput.addEventListener('keyup', performSearch);
@@ -155,12 +154,10 @@ searchInput.addEventListener('focus', expandSearchBox);
 
 resetFiltersButton.addEventListener('click', resetFilters, false);
 
-alert('hekki');
-
 const load = () => {
     colourSearch.querySelectorAll('.colour-checkbox input').forEach(colourFilter => colourFilter.addEventListener('click', filterColours), false);
-    document.querySelectorAll('.shoe-item').forEach(item => item.addEventListener('click', toggleModal), false);
-    document.querySelector('.modal .close-button').addEventListener('click', showHideModal);//FIX THIS
+    document.querySelectorAll('.shoe-item').forEach(item => item.addEventListener('click', toggleItemModal), false);
+    // document.querySelector('.modal').addEventListener('click', showHideModal, false);
     window.addEventListener('click', windowOnClick, false);
 }
 window.onload = load;
