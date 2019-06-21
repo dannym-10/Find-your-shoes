@@ -23,7 +23,6 @@ const sizeMarkup = (sizes) => {
 
 const colorsMarkup = (colours) => {
     let markup = ``;
-
     colours.map(color => markup += `<li class="color-item color-${color}">${color}</li>`);
     return markup;
 }
@@ -47,6 +46,7 @@ const displayResults = (data) => {
         `;
         itemMarkup += markup;
     });
+    console.log("setting the results");
     resultsList.innerHTML = itemMarkup;
 }
 
@@ -143,10 +143,7 @@ function toggleItemModal() {
 }
 
 function windowOnClick(e) {
-    if (e.target === document.querySelector('.modal')) {
-        showHideModal();
-    }
-    if (e.target.matches('.close-button')) {
+    if ((e.target === document.querySelector('.modal'))|| (e.target.matches('.close-button'))){
         showHideModal();
     }
 
