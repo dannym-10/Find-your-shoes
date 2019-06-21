@@ -1,5 +1,8 @@
 @import 'additional/variables.scss';
 
+body {
+    overscroll-behavior: none;
+}
 .wrapper {
     max-width: $globalwidth;
     margin: 0 auto;

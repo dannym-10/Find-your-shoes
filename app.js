@@ -149,6 +149,10 @@ function windowOnClick(e) {
     if (e.target.matches('.close-button')) {
         showHideModal();
     }
+
+    if ((e.keycode == 27 || e.code == 'Escape') && (document.querySelector('.modal').classList.contains('show-modal'))) {
+        showHideModal();
+    }
 }
 
 searchInput.addEventListener('keyup', performSearch);
@@ -162,6 +166,7 @@ const load = () => {
     document.querySelectorAll('.shoe-item').forEach(item => item.addEventListener('click', toggleItemModal), false);
     // document.querySelector('.modal').addEventListener('click', showHideModal, false);
     window.addEventListener('click', windowOnClick, false);
+    window.addEventListener('keydown', windowOnClick, false);
 }
 window.onload = load;
 
