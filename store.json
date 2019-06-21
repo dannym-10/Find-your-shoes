@@ -1,103 +1,114 @@
 {
     "store": [
         {
+            "id": "003",
+            "make": "Converse",
+            "model": "Off White v2",
+            "sizes": [5,6,7,8,9,10,11,12,13,14],
+            "colours": ["white", "orange"],
+            "rating": "9",
+            "releaseYear": 2019,
+            "retailPrice": 110,
+            "image": "./images/converse-off-white.png"
+        },
+        {
             "id": "001",
             "make": "Nike",
-            "model": "Jordan 1",
+            "model": "Jordan 1 Not For resale",
             "sizes": [5,6,7,8,9,10,11,12,13,14],
-            "colours": ["red", "green", "white"],
+            "colours": ["red", "black", "white"],
             "rating": "9",
-            "releaseYear": 2015,
-            "retailPrice": 145,
-            "image": "location"
+            "releaseYear": 2018,
+            "retailPrice": 140,
+            "image": "./images/jordan-1-nfr.png"
         },
         {
             "id": "002",
             "make": "Nike",
-            "model": "Jordan 2",
+            "model": "Jordan 1 Union",
             "sizes": [7,8,9,10,11,12,13,14,15],
-            "colours": ["purple", "pink", "white"],
-            "rating": "6",
-            "releaseYear": 2016,
-            "retailPrice": 130,
-            "image": "Images"
-        },
-        {
-            "id": "003",
-            "make": "Nike",
-            "model": "Jordan 3",
-            "sizes": [5,6,7,8,9,10,11,12,13,14],
-            "colours": ["red", "black", "green"],
+            "colours": ["red", "white"],
             "rating": "9",
-            "releaseYear": 2019,
-            "retailPrice": 100,
-            "image": "location"
+            "releaseYear": 2018,
+            "retailPrice": 165,
+            "image": "./images/jordan-1-union.png"
         },
         {
             "id": "004",
             "make": "Nike",
-            "model": "Jordan 4",
+            "model": "Jordan 1 Hyper Crimson",
             "sizes": [5,6,7,8,9,10,11,12,13,14],
-            "colours": ["red", "black", "white", "gold"],
-            "rating": "10",
-            "releaseYear": 2013,
-            "retailPrice": 165,
-            "image": "location"
+            "colours": ["orange", "black", "grey"],
+            "rating": "8",
+            "releaseYear": 2019,
+            "retailPrice": 130,
+            "image": "./images/jordan-1-crimson.png"
         },
         {
             "id": "005",
             "make": "Nike",
-            "model": "Jordan 5",
+            "model": "Air max 90 off white",
             "sizes": [5,6,7,8,9,10,11,12,13,14],
-            "colours": ["red", "silver", "white"],
-            "rating": "6",
+            "colours": ["teal", "sandybrown"],
+            "rating": "9",
             "releaseYear": 2009,
-            "retailPrice": 105,
-            "image": "location"
+            "retailPrice": 140,
+            "image": "./images/off-white-90-desert.png"
         },
         {
             "id": "006",
             "make": "Nike",
-            "model": "Jordan 8",
+            "model": "Jordan 1 Travis Scott",
             "sizes": [5,6,7,8,9,10,12,13,14],
-            "colours": ["red", "blue", "white"],
+            "colours": ["brown", "white", "black"],
             "rating": "6",
-            "releaseYear": 2009,
-            "retailPrice": 99,
-            "image": "location"
+            "releaseYear": 2019,
+            "retailPrice": 160,
+            "image": "./images/jordan-1-travis-scott.png"
         },
         {
             "id": "007",
             "make": "Nike",
-            "model": "Jordan 6",
+            "model": "Sacai Waffle",
             "sizes": [5,6,7,8,9,10,11],
-            "colours": ["red", "white"],
+            "colours": ["green", "white", "yellow"],
             "rating": "6",
             "releaseYear": 2009,
             "retailPrice": 170,
-            "image": "location"
+            "image": "./images/sacai-waffle-green.png"
         },
         {
             "id": "008",
-            "make": "Adidas",
-            "model": "Yeezy 350 Bred",
+            "make": "Vans",
+            "model": "Supreme JPG lowtops",
             "sizes": [3,4,5,6,7,8,9,10,11,12,13,14],
-            "colours": ["black", "red"],
-            "rating": "9",
-            "releaseYear": 2011,
-            "retailPrice": 170,
+            "colours": ["black", "burgundy"],
+            "rating": "6",
+            "releaseYear": 2019,
+            "retailPrice": 94,
             "image": "location"
         },
         {
             "id": "009",
-            "make": "Adidas",
-            "model": "Yeezy Turtle Dove",
+            "make": "Nike",
+            "model": "Jordan 1 Pine Green",
             "sizes": [3,4,5,6,7,8,9,10,11,12,13,14],
-            "colours": ["black", "red", "orange"],
+            "colours": ["green", "black", "white"],
             "rating": "9",
-            "releaseYear": 2016,
-            "retailPrice": 170,
-            "image": "location"
+            "releaseYear": 2018,
+            "retailPrice": 130,
+            "image": "./images/jordan-1-pine-green.png"
+        },
+        {
+            "id": "010",
+            "make": "Nike",
+            "model": "Sacai blazer",
+            "sizes": [3,4,5,6,7,8,9,10,11,12,13,14],
+            "colours": ["red", "yellow", "white"],
+            "rating": "6",
+            "releaseYear": 2019,
+            "retailPrice": 140,
+            "image": "./images/sacai-blazer-yellow.png"
         }
     ]
 }
