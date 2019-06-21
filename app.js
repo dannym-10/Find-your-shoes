@@ -35,9 +35,6 @@ const displayResults = (data) => {
         let markup =
         `
             <li class="shoe-item" data-shoe-id="${id}">
-                <div class="image-wrapper">
-                    <img src="" alt="">
-                </div>
                 <div class="info">
                     <div class="make">${make}</div>
                     <div class="model">${model}</div>
@@ -133,8 +130,14 @@ function toggleItemModal() {
     const theShoe = tempData.store.find(shoe => {
         return shoe.id === shoeId;
     });
+    console.log({theShoe});
     theModal.innerHTML = `
-        <h2>${theShoe.make} - ${theShoe.model}</h2>
+        <img class="modal-image" src="${theShoe.image}" alt="${theShoe.model}-shoe" />
+        <div class="modal-info">
+            <h2 class="make-model">${theShoe.make} - ${theShoe.model}</h2>
+            <p class="release-year">Release Year: ${theShoe.releaseYear}</p>
+            <p class="retail-price">Retail Price: ${theShoe.retailPrice}</p>
+        </div>
         <span class="close-button">&times;</span>
     `;
 }

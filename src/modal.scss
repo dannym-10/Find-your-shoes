@@ -17,8 +17,32 @@
         width: 500px;
         height: 250px;
         border-radius: 10px;
-        padding: 25px;
+        padding: 30px;
         box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+
+        .modal-image {
+            width: 43%;
+        }
+
+        .modal-info {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding-left: 15px;
+
+            .make-model {
+                font-size: 18px;
+                padding-bottom: 10px;
+            }
+
+            .release-year,
+            .retail-price {
+                padding-bottom: 4px;
+                font-size: 14px;
+            }
+        }
 
         .close-button {
             position: absolute;
