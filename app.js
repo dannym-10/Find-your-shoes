@@ -124,6 +124,8 @@ const showHideModal = () => {
 }
 
 function toggleItemModal() {
+    console.log('clicked');
+
     showHideModal();
     const theModal = document.querySelector('.modal-content');
     const shoeId = this.getAttribute('data-shoe-id');
