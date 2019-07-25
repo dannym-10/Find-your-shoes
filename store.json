@@ -58,7 +58,7 @@
         {
             "id": "006",
             "make": "Nike",
-            "model": "Jordan 1 Travis Scott",
+            "model": "Jordan 1 Travis Scott High",
             "sizes": [5,6,7,8,9,10,12,13,14],
             "colours": ["brown", "white", "black"],
             "rating": "6",
@@ -109,6 +109,17 @@
             "releaseYear": 2019,
             "retailPrice": 140,
             "image": "./images/sacai-blazer-yellow.png"
+        },
+        {
+            "id": "011",
+            "make": "Nike",
+            "model": "Jordan 1 Travis Scott Low",
+            "sizes": [3,4,5,6,7,8,9,10,11,12,13,14],
+            "colours": ["brown", "black", "white"],
+            "rating": "7",
+            "releaseYear": 2019,
+            "retailPrice": 115,
+            "image": "./images/jordan-1-travis-scott-high.jpg"
         }
     ]
 }
