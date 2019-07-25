@@ -46,8 +46,9 @@ const displayResults = (data) => {
         `;
         itemMarkup += markup;
     });
-    console.log("setting the results");
+    document.querySelectorAll('.shoe-item').forEach(shoeItem => shoeItem.removeEventListener('click', toggleItemModal));
     resultsList.innerHTML = itemMarkup;
+    document.querySelectorAll('.shoe-item').forEach(shoeItem => shoeItem.addEventListener('click', toggleItemModal));
 }
 
 // -------- Search --------
@@ -88,6 +89,7 @@ const returnResults = (searchedWord) => {
 }
 
 function performSearch() {
+    console.log(this.value);
     resultsList.innerHTML = '';
     let tempArray = [...returnResults(this.value)];
     (tempArray.length > 0) ? displayResults(tempArray) : resultsList.innerHTML = noResults;
@@ -114,9 +116,7 @@ const setupFilterData = (data) => {
     createFilters(filterData);
 }
 
-const expandSearchBox = () => {
-    searchInput.classList.toggle('focused');
-}
+const expandSearchBox = () => searchInput.classList.toggle('focused');
 
 // -------- Modal --------
 const showHideModal = () => {
@@ -132,7 +132,6 @@ function toggleItemModal() {
     const theShoe = tempData.store.find(shoe => {
         return shoe.id === shoeId;
     });
-    console.log({theShoe});
     theModal.innerHTML = `
         <img class="modal-image" src="${theShoe.image}" alt="${theShoe.model}-shoe" />
         <div class="modal-info">
@@ -150,6 +149,7 @@ function windowOnClick(e) {
     }
 
     if ((e.keycode == 27 || e.code == 'Escape') && (document.querySelector('.modal').classList.contains('show-modal'))) {
+        console.log('escape pressed');
         showHideModal();
     }
 }
@@ -163,7 +163,6 @@ resetFiltersButton.addEventListener('click', resetFilters, false);
 const load = () => {
     colourSearch.querySelectorAll('.colour-checkbox input').forEach(colourFilter => colourFilter.addEventListener('click', filterColours), false);
     document.querySelectorAll('.shoe-item').forEach(item => item.addEventListener('click', toggleItemModal), false);
-    // document.querySelector('.modal').addEventListener('click', showHideModal, false);
     window.addEventListener('click', windowOnClick, false);
     window.addEventListener('keydown', windowOnClick, false);
 }
