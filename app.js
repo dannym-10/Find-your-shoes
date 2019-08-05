@@ -54,7 +54,7 @@ const displayResults = (data) => {
 // -------- Search --------
 function resetFilters(event) {
     event.preventDefault();
-    console.log(this);
+    searchInput.value = '';
 }
 
 function filterColours() {
